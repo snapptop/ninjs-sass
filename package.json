@@ -1,0 +1,39 @@
+{
+  "name": "ninjs-sass",
+  "description": ".scss to .css build",
+  "version": "0.0.18",
+  "main": "index.js",
+  "author": "Stuart MacKenzie",
+  "license": "AGPL-1.0",
+  "homepage": "https://github.com/snapptop/ninjs-sass#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snapptop/ninjs-sass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/snapptop/ninjs-sass/issues"
+  },
+  "engines": {
+    "node": ">= 0.6"
+  },
+  "scripts": {
+    "cli": "set NODE_ENV=development&&node ./cli.js",
+    "test": "set NODE_ENV=development && set DEBUG=* && node ./test/index.js",
+    "build.app": "set NODE_ENV=development && set DEBUG=* && node ./cmd/index.js --cmd=app",
+    "build.headings": "set NODE_ENV=development && set DEBUG=* && node ./cmd/index.js --cmd=headings"
+  },
+  "contributors": [
+    "Stuart John MacKenzie <stuart.mackenzie@snapptop.com>"
+  ],
+  "keywords": [
+    "ninjs",
+    "sass"
+  ],
+  "dependencies": {
+    "autoprefixer": "^6.5.0",
+    "ninjs-lodash": "^0.1.20",
+    "node-sass": "^3.10.1",
+    "postcss": "^5.2.4"
+  },
+  "devDependencies": {}
+}
